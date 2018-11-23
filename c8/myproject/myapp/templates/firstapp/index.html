@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First aPP</title>
+    <link rel="stylesheet " href="{% static "css/mystyle.css" %}"/>
+</head>
+<body>
+<div class ="djangotwo">
+    {% if acd %}
+        <table>
+        <thread>
+        <th>Product </th>
+        <th>price</th>
+        </thread>
+
+        {% for acc in acd %}
+        <tr>
+            <td>{{ acc.price  }}</td>
+        </tr>
+        {% endfor %}
+
+    </table>
+     {% endif %}
+
+</div>
+<h1>Welcome to Inventory Managment App</h1>
+<img src="{% static "images/INVENTORY.jpg" %}">
+{{ insert_me }}
+</body>
+</html>
